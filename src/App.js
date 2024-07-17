@@ -1,14 +1,18 @@
 import './App.css';
-import { Carusel } from './components/carousel';
+import { Carousel } from './components/Carousel/carousel';
+import { Footer } from './components/Footer/footerApp';
 import { Navbar } from './components/navbar';
-import { Trending } from './components/trending';
+import { Posts } from './components/Pos/postsApp';
+import { Trending } from './components/Trending/trending';
 
 function App() {
   return (
     <div>
       <Navbar/>
-      <Carusel/>
+      <Carousel/>
       <Trending/>
+      <Posts/>
+      <Footer/>
     </div>
   );
 }

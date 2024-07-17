@@ -24,7 +24,7 @@ export const Navbar = () => {
                     <a>Blog</a>
                     <a>Contact</a>
                 </div>
-                <div className="flex gap-3 bg-[#F4F4F5] pl-4 py-2 pr-2">
+                <div className="flex gap-3 bg-[#F4F4F5] pl-4 py-2 pr-2 rounded-lg">
                     <input className="bg-[#F4F4F5] placeholder-[#52525B]" placeholder="Search"/>
                     {SvgSearch}
                 </div>

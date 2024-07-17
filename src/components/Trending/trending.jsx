@@ -1,7 +1,7 @@
-import img from "../assets/img1.png"
-import imgg from "../assets/img2.png"
-import imggg from "../assets/img3.png"
-import imgggg from "../assets/img4.png"
+import img from "../../assets/img1.png"
+import imgg from "../../assets/img2.png"
+import imggg from "../../assets/img3.png"
+import imgggg from "../../assets/img4.png"
 import { CardCreator } from "./trendingCard"
 
 export const Trending = () => {
