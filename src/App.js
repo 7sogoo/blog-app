@@ -1,5 +1,8 @@
 import './App.css';
+import { NotFound } from './components/404/notFound';
+import { BlogApp } from './components/Blog/blogApp';
 import { Carousel } from './components/Carousel/carousel';
+import { ContactUs } from './components/ContactUs/contactUs';
 import { Footer } from './components/Footer/footerApp';
 import { Navbar } from './components/navbar';
 import { Posts } from './components/Pos/postsApp';
@@ -13,6 +16,9 @@ function App() {
       <Trending/>
       <Posts/>
       <Footer/>
+      <NotFound/>
+      <ContactUs/>
+      <BlogApp/>
     </div>
   );
 }
