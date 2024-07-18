@@ -1,7 +1,7 @@
 export const NotFound = () => {
     return(
         <div className="px-[840px] py-[100px]">
-            <div className="flex gap-10 justify-between">
+            <div className="flex gap-10 items-center justify-between">
                 <div className="min-w-[21%] flex justify-center items-center text-7xl font-semibold">404</div>
                 <div className="w-[1px] h-[156px] bg-[#E8E8EA]"></div>
                 <div className="flex flex-col gap-5 py-2 max-w-[61%]">
