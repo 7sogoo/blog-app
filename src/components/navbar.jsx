@@ -20,9 +20,9 @@ export const Navbar = () => {
             <div className="flex justify-between items-center">
                 <div>{SvgMetaBlog}</div>
                 <div className="flex gap-10 text-[#3B3C4A]">
-                    <a>Home</a>
-                    <a>Blog</a>
-                    <a>Contact</a>
+                    <button>Home</button>
+                    <button>Blog</button>
+                    <button>Contact</button>
                 </div>
                 <div className="flex gap-3 bg-[#F4F4F5] pl-4 py-2 pr-2 rounded-lg translate-x-[-80px]">
                     <input className="bg-[#F4F4F5] placeholder-[#52525B]" placeholder="Search"/>

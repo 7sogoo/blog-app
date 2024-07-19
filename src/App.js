@@ -1,7 +1,7 @@
 import './App.css';
 import { NotFound } from './components/404/notFound';
 import { BlogApp } from './components/Blog/blogApp';
-import { Carousel } from './components/Carousel/carousel';
+import { CarouselApp } from './components/Carousel/carousel';;
 import { ContactUs } from './components/ContactUs/contactUs';
 import { Footer } from './components/Footer/footerApp';
 import { Navbar } from './components/navbar';
@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Navbar/>
-      <Carousel/>
+      <CarouselApp/>
       <Trending/>
       <Posts/>
       <Footer/>

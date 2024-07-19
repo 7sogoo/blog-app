@@ -30,10 +30,10 @@ export const FooterContent = () => {
                 <button>Contact</button>
             </div>
             <div className="flex gap-7">
-                <a>{SvgFb}</a>
-                <a>{SvgTw}</a>
-                <a>{SvgIg}</a>
-                <a>{SvgIn}</a>
+                <a target="_blank" href="https://www.facebook.com/">{SvgFb}</a>
+                <a target="_blank" href="https://www.twitter.com/">{SvgTw}</a>
+                <a target="_blank" href="https://www.instagram.com/">{SvgIg}</a>
+                <a target="_blank" href="https://www.linkedin.com/">{SvgIn}</a>
             </div>
         </div>
     )
