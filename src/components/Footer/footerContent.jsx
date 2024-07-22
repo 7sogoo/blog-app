@@ -32,10 +32,10 @@ export const FooterContent = () => {
                 <Link to="/Contact">Contact</Link>
             </div>
             <div className="flex gap-7">
-                <a target="_blank" href="https://www.facebook.com/">{SvgFb}</a>
-                <a target="_blank" href="https://www.twitter.com/">{SvgTw}</a>
-                <a target="_blank" href="https://www.instagram.com/">{SvgIg}</a>
-                <a target="_blank" href="https://www.linkedin.com/">{SvgIn}</a>
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/">{SvgFb}</a>
+                <a target="_blank" rel="noreferrer" href="https://www.twitter.com/">{SvgTw}</a>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/">{SvgIg}</a>
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/">{SvgIn}</a>
             </div>
         </div>
     )

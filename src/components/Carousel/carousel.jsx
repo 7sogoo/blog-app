@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { CarouselContent } from "./carouselContent"
-import { Carousel } from "react-responsive-carousel"
 
 const SvgNext = <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#696A75" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-chevron-right"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m10 8 4 4-4 4"/></svg>
 const SvgBack = <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#696A75" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-chevron-left"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m14 16-4-4 4-4"/></svg>
@@ -8,8 +7,8 @@ const SvgBack = <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" v
 export const CarouselApp = () => {
 
     const [current,setCurrent] = useState(0) 
-    const [content, setContent] = useState(
-[        {
+    let content = [        
+        {
         backgroundImage : "https://s3-alpha-sig.figma.com/img/eb4f/aad2/4394e91108e011b0d07581596959713b?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fCLy5GghCAPtYF~~U28~GaAdAp88xIeWT8FSkxHLq4JKnZuK1Ax07wga4n6pArK3wCb0p3KuijpLEmUvLcVvF5JxOkJWk9AU1rXxAtZd4woX~Gpb6eSSvDZZqMcP8h-3zhg9ut2mf4VzWiIiDHKoa9NFXk8w0G04hXxZ2xt~73IMrGSXvFTz~kv0Vk4MPJFtZHNiElyvYHEdlUlU9HVpQZdHPzvhc2XEN6DiTGUzQFh~QgwOE1h-gKcycyMG3CwVSq-PGcJpBzOKf20idyHPjhXZtUuuqxXW56q6b~~6JJETVtLbxz~ERtCcjXI3euAOxRmG8ebg83eq01thZq~zEg__",
         title: "Grid system for better Design User Interface",
         date: "August 20, 2022",
@@ -24,7 +23,6 @@ export const CarouselApp = () => {
         title: "Grid system for better Design User Interface",
         date: "September 20, 2023",
     }]
-)
 
     const leftClick = () => {
         if(current > 0){
