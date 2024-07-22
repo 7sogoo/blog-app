@@ -1,6 +1,6 @@
 export const ContactUs = () => {
     return(
-        <div>
+        <div className="max-w-[895px] m-auto">
             <div className="flex flex-col gap-5 mx-[63px]">
                 <div className="px-[72.5px] flex flex-col gap-5">
                     <p className="text-4xl font-semibold">Contact Us</p>
