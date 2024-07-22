@@ -2,7 +2,7 @@
 
 export const Blog = (props) => {
     return (
-        <div className="px-[760px] py-[100px] flex flex-col gap-5">
+        <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-5">
                 <p className="text-4xl font-semibold">{props.title}</p>
                 <div className="flex gap-6 items-center">

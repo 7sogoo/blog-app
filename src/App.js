@@ -1,25 +1,22 @@
-import './App.css';
-import { NotFound } from './components/404/notFound';
-import { BlogApp } from './components/Blog/blogApp';
-import { CarouselApp } from './components/Carousel/carousel';;
-import { ContactUs } from './components/ContactUs/contactUs';
-import { Footer } from './components/Footer/footerApp';
-import { Navbar } from './components/navbar';
-import { Posts } from './components/Pos/postsApp';
-import { Trending } from './components/Trending/trending';
+import "./App.css";
+import { Home } from "./components/Layout/Home";
+import { Blogs } from "./components/Layout/Blogs";
+import { NoPage } from "./components/Layout/404";
+import { Contact } from "./components/Layout/Contact";
+
+import { Route, Routes } from "react-router-dom";
+import { BasicLayout } from "./components/Layout/BasicLayout";
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <CarouselApp/>
-      <Trending/>
-      <Posts/>
-      <Footer/>
-      <NotFound/>
-      <ContactUs/>
-      <BlogApp/>
-    </div>
+    <BasicLayout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Blogs" element={<Blogs />} />
+        <Route path="/*" element={<NoPage />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    </BasicLayout>
   );
 }
 

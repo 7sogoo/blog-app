@@ -10,7 +10,7 @@ const URLS = [
 
 export const Trending = () => {
     return (
-        <div className="px-[350px] py-[100px] flex flex-col gap-[30px]">
+        <div className="flex flex-col gap-[30px]">
             <p className="text-2xl font-bold">Trending</p>
             <div className="flex gap-8">
                 {URLS.map(el => (

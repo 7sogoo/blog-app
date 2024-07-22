@@ -44,7 +44,7 @@ export const CarouselApp = () => {
     }
 
     return( 
-        <div className="px-[350px] py-[100px]">
+        <div>
             <div className="relative cursor-pointer">
                 <CarouselContent bgPhoto={content[current].backgroundImage} title={content[current].title} date={content[current].date}/>
                 <div className="absolute right-0 mt-2">
