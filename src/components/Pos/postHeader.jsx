@@ -3,23 +3,27 @@ import { Link } from "react-router-dom";
 
 export const PostHeader = (props) => {
   const arr = ["Design", "Travel", "Fashion", "Technology", "Branding"];
-
-  const [datas, setDatas] = useState(arr);
+  const [posts, setPosts] = useState(props.posts);
 
   const handleClick = (index) => {
-    console.log(index);
-    const newArr = props.posts.filter(post => post.tag == arr[index])
-    // const newArr = arr.filter((el,i) => i === index)
-    console.log(newArr);
-    props.setPosts(newArr)
+    let filteredPosts = [...posts];
+
+    filteredPosts = posts.filter(post => post.tag === arr[index]);   
+    props.setPosts(filteredPosts);
   };
+
+  const handleAllClick = () => {
+    props.setPosts(posts)
+  }
 
   return (
     <div className="flex flex-col gap-8">
-      <p className="text-2xl font-bold">All Blog Post</p>
+      <p className="text-2xl font-bold">All Blog Posts</p>
       <div className="flex justify-between">
         <div className="flex gap-5 text-[#495057]">
-          <button className="text-[#D4A373]">All</button>
+          <button onClick={handleAllClick} className="text-[#D4A373]">
+            All
+          </button>
           {arr.map((el, index) => (
             <button onClick={() => handleClick(index)} key={index}>
               {el}
