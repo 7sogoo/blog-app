@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const PostHeader = (props) => {
   const arr = ["Design", "Travel", "Fashion", "Technology", "Branding"];
-  const myPosts = props.posts;
+  const [myPosts,setMyPosts] = useState(props.posts);
 
   const handleClick = (index) => {
     let filteredPosts = [...myPosts];
