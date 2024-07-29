@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { CarouselContent } from "./carouselContent";
+import { useNavigate } from "react-router-dom";
 
 const SvgNext = <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#696A75" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-chevron-right"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m10 8 4 4-4 4"/></svg>
 const SvgBack = <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#696A75" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-chevron-left"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m14 16-4-4 4-4"/></svg>
@@ -7,6 +8,13 @@ const SvgBack = <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" v
 export const CarouselApp = ({ articles }) => {
   const [current, setCurrent] = useState(0);
   const [transitioning, setTransitioning] = useState(false);
+
+  const navigate = useNavigate()
+
+  const handleClickPost = (id) => {
+    navigate(`/${id}`)
+    console.log(id)
+  }
 
   const leftClick = () => {
     setTransitioning(true);
@@ -33,7 +41,7 @@ export const CarouselApp = ({ articles }) => {
         <div className={`flex transition-transform duration-300 ease-in-out ${transitioning ? "transform" : ""}`}style={{ transform: `translateX(-${current * 100}%)` }}>
           {articles.map((article, index) => (
             <div key={index} className="flex-shrink-0 w-full">
-              <CarouselContent bgPhoto={article.social_image} title={article.title} date={article.date}/>
+              <CarouselContent onClick={() => handleClickPost(article.id)} bgPhoto={article.social_image} title={article.title} date={article.date}/>
             </div>
           ))}
         </div>
