@@ -9,11 +9,11 @@ export const ContactUs = () => {
                 <div className="flex gap-[50px] py-[10px] px-[65.5px] w-[100%] mb-[40px]">
                     <div className="p-4 rounded-xl w-[50%] border-[1px] border-[#E8E8EA]">
                         <p className="font-semibold text-2xl">Address</p>
-                        <p className="text-[#696A75]">1328 Oak Ridge Drive, Saint Louis, Missouri</p>
+                        <p className="text-[#696A75] text-xl">1328 Oak Ridge Drive, Saint Louis, Missouri</p>
                     </div>
                     <div className="p-4 rounded-xl w-[50%] border-[1px] border-[#E8E8EA]">
                         <p className="font-semibold text-2xl">Contact</p>
-                        <p className="text-[#696A75]">313-332-8662 info@email.com</p>
+                        <p className="text-[#696A75] text-xl">313-332-8662 info@email.com</p>
                     </div>
                 </div>
             </div>

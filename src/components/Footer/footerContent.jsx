@@ -13,9 +13,10 @@ const SvgIn = <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
 <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
 </svg>;
 
+
 export const FooterContent = () => {
     return (
-        <div className="flex w-[100%]">
+        <div className="flex w-[100%] justify-between">
             <div className="flex flex-col gap-6 text-[#696A75] max-w-[23.8%]">
                 <div className="flex flex-col gap-3">
                     <p className="text-[#181A2A] font-semibold text-lg">About</p>
@@ -26,10 +27,12 @@ export const FooterContent = () => {
                     <p>Phone : 880 123 456 789</p>
                 </div>
             </div>
-            <div className="flex flex-col gap-2 items-center min-w-[43%]">
-                <Link to="/">Home</Link>
-                <Link to="/Blogs">Blog</Link>
-                <Link to="/Contact">Contact</Link>
+            <div className="flex justify-center min-w-[43%]">
+                <div className="flex flex-col gap-2">
+                    <Link to="/">Home</Link>
+                    <Link to="/Blogs">Blog</Link>
+                    <Link to="/Contact">Contact</Link>
+                </div>
             </div>
             <div className="flex gap-7">
                 <a target="_blank" rel="noreferrer" href="https://www.facebook.com/">{SvgFb}</a>

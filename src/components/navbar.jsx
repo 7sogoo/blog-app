@@ -20,7 +20,7 @@ export const Navbar = () => {
     return (
         <div className="py-8">
             <div className="flex justify-between items-center">
-                <div>{SvgMetaBlog}</div>
+                <Link to="/">{SvgMetaBlog}</Link>
                 <div className="flex gap-10 text-[#3B3C4A]">
                     <Link to="/">Home</Link>
                     <Link to="/Blogs">Blog</Link>
