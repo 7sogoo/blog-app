@@ -24,7 +24,7 @@ export const Home = () => {
 
     return (
         <>
-            <CarouselApp />
+            <CarouselApp articles={articles} />
             <Trending articles={articles.slice(0, 4)} />
             <Posts articles={showAll ? articles : articles.slice(0, 9)} />
             <MyButton onClick={handleClick}>{buttonText}</MyButton>
